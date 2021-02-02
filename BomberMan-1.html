@@ -1,0 +1,213 @@
+<!DOCT html>
+<html>
+<head>
+<style>
+body{
+    position:relative;
+    display:flex:
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(blue, tomato);
+}
+.h1{
+    align:center;
+    display:inline;
+    font-size:40px;
+    margin-left:10%;
+    background:gold;
+}
+header{
+    height:12%;
+    background-image: linear-gradient(blue, green);
+}
+td{
+    border:3px solid gold;
+    height:50px;
+    width:80px;
+    font-size:50px;
+    text-align:white;
+    color:red;
+    border-radius:40px;
+    background-image: linear-gradient(red, yellow, green);
+}
+h1{
+
+    text-align:center;
+    font-size:60px;
+}
+table{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:30px;
+}
+button{
+    font-size:30px;
+    width:140px;
+    border-radius:20px;
+    color:rgba(255,255,255,1);
+    margin-left:45%;
+    background-image: linear-gradient(red, green, gold);
+}
+img{
+    border:3px solid gold;
+    height:50px;
+    width:80px;
+    font-size:50px;
+    text-align:white;
+    color:red;
+    border-radius:40px;
+}
+</style>
+</head>
+<body>
+<div class="h1">Current Score is</div>
+<div class="h1" id="dis"></div>
+<table class="table">
+<tr>
+    <td onclick="update(this,0,0)"></td>
+    <td onclick="update(this,0,1)"></td>
+    <td onclick="update(this,0,2)"></td>
+    <td onclick="update(this,0,3)"></td>
+    <td onclick="update(this,0,4)"></td>
+    <td onclick="update(this,0,5)"></td>
+    <td onclick="update(this,0,6)"></td>
+    <td onclick="update(this,0,7)"></td>
+    <td onclick="update(this,0,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,1,0)"></td>
+    <td onclick="update(this,1,1)"></td>
+    <td onclick="update(this,1,2)"></td>
+    <td onclick="update(this,1,3)"></td>
+    <td onclick="update(this,1,4)"></td>
+    <td onclick="update(this,1,5)"></td>
+    <td onclick="update(this,1,6)"></td>
+    <td onclick="update(this,1,7)"></td>
+    <td onclick="update(this,1,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,2,0)"></td>
+    <td onclick="update(this,2,1)"></td>
+    <td onclick="update(this,2,2)"></td>
+    <td onclick="update(this,2,3)"></td>
+    <td onclick="update(this,2,4)"></td>
+    <td onclick="update(this,2,5)"></td>
+    <td onclick="update(this,2,6)"></td>
+    <td onclick="update(this,2,7)"></td>
+    <td onclick="update(this,2,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,3,0)"></td>
+    <td onclick="update(this,3,1)"></td>
+    <td onclick="update(this,3,2)"></td>
+    <td onclick="update(this,3,3)"></td>
+    <td onclick="update(this,3,4)"></td>
+    <td onclick="update(this,3,5)"></td>
+    <td onclick="update(this,3,6)"></td>
+    <td onclick="update(this,3,7)"></td>
+    <td onclick="update(this,3,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,4,0)"></td>
+    <td onclick="update(this,4,1)"></td>
+    <td onclick="update(this,4,2)"></td>
+    <td onclick="update(this,4,3)"></td>
+    <td onclick="update(this,4,4)"></td>
+    <td onclick="update(this,4,5)"></td>
+    <td onclick="update(this,4,6)"></td>
+    <td onclick="update(this,4,7)"></td>
+    <td onclick="update(this,4,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,5,0)"></td>
+    <td onclick="update(this,5,1)"></td>
+    <td onclick="update(this,5,2)"></td>
+    <td onclick="update(this,5,3)"></td>
+    <td onclick="update(this,5,4)"></td>
+    <td onclick="update(this,5,5)"></td>
+    <td onclick="update(this,5,6)"></td>
+    <td onclick="update(this,5,7)"></td>
+    <td onclick="update(this,5,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,6,0)"></td>
+    <td onclick="update(this,6,1)"></td>
+    <td onclick="update(this,6,2)"></td>
+    <td onclick="update(this,6,3)"></td>
+    <td onclick="update(this,6,4)"></td>
+    <td onclick="update(this,6,5)"></td>
+    <td onclick="update(this,6,6)"></td>
+    <td onclick="update(this,6,7)"></td>
+    <td onclick="update(this,6,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,7,0)"></td>
+    <td onclick="update(this,7,1)"></td>
+    <td onclick="update(this,7,2)"></td>
+    <td onclick="update(this,7,3)"></td>
+    <td onclick="update(this,7,4)"></td>
+    <td onclick="update(this,7,5)"></td>
+    <td onclick="update(this,7,6)"></td>
+    <td onclick="update(this,7,7)"></td>
+    <td onclick="update(this,7,8)"></td>
+</tr>
+<tr>
+    <td onclick="update(this,8,0)"></td>
+    <td onclick="update(this,8,1)"></td>
+    <td onclick="update(this,8,2)"></td>
+    <td onclick="update(this,8,3)"></td>
+    <td onclick="update(this,8,4)"></td>
+    <td onclick="update(this,8,5)"></td>
+    <td onclick="update(this,8,6)"></td>
+    <td onclick="update(this,8,7)"></td>
+    <td onclick="update(this,8,8)"></td>
+</tr>
+</table>
+<button onclick="window.location.reload()">Refresh<button>
+<button onclick="window.history.back()">Exit<button>
+<script>
+var matrix=[
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""],
+["","","","","","","","",""]
+];
+for(var i=0;i<9;i++){
+    for(var j=0;j<9;j++){
+        matrix[i][j]=0;
+    }
+}
+for(var i=0;i<10;i++){
+    var x=Math.floor(Math.random()*(80));
+    matrix[Math.floor(x/10)][x%10]="Bomb";
+}
+
+console.log(matrix);
+var score=0;
+function update(element,row,col){
+    if(matrix[row][col]!=7){
+    if(matrix[row][col]=="Bomb"){
+        element.style.background="red";
+        alert("Game Over Your Score is\n"+score);
+        window.location.reload();
+    }
+    else{
+        matrix[row][col]=7;
+        score++;
+        element.innerHTML="<img src='1.jpg'/>";
+        document.getElementById('dis').textContent=score;
+        element.style.background="green";
+    }
+}}
+</script>
+
+
+</body>
+</html>
